@@ -196,6 +196,7 @@ a {
   list-style: none;
   padding-left: 0;
   color: var(--color-body);
+  margin: 0 0;
 }
 
 .list--inline .list__item {
@@ -212,8 +213,54 @@ a {
 
 .card__header,
 .card__body {
-  padding: 2rem 3rem;
   text-align: center;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.card__header {
+  padding-top: 7rem;
 }
 
 /* Skills */
+
+.skill__name {
+  margin-top: 2rem;
+  font-size: 2.4rem;
+}
+
+.skill__summary {
+  font-size: 2rem;
+  display: block;
+}
+
+.skill__kit,
+.skill__tools {
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+.skill .list__item {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .skill__summary {
+    font-size: 1.8rem;
+  }
+
+  .skill__kit,
+  .skill__tools {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .skill .list__item {
+    font-size: 1.3rem;
+  }
+}
