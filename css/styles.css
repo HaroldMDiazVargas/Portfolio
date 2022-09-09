@@ -25,6 +25,7 @@ body {
   color: var(--color-body);
   line-height: 1.5;
   font-size: 2.4rem;
+  height: 200vh;
 }
 
 h1,
@@ -74,6 +75,7 @@ a {
 .btn-group {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
@@ -95,6 +97,11 @@ a {
 .btn-group:hover .icon {
   color: #fff;
   fill: #fff;
+}
+
+.btn-group--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .btn-group--primary {
@@ -133,6 +140,11 @@ a {
   .btn-group {
     font-size: 1.5rem;
     padding: 1rem 2rem;
+  }
+
+  .btn-group--stretched {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .btn-group .icon {
@@ -385,5 +397,45 @@ a {
   }
   .testimonial .quote {
     margin-top: 5rem;
+  }
+}
+
+/* Callouts */
+
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.callout__heading {
+  margin-top: 0;
+  color: inherit;
+  font-size: 3rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.callout .btn-group {
+  justify-self: center;
+  align-self: center;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .callout .btn-group {
+    justify-self: start;
+    margin-left: 4rem;
+  }
+  .callout__heading {
+    justify-self: end;
+    margin-right: 4rem;
   }
 }
