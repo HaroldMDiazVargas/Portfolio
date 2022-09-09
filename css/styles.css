@@ -31,6 +31,7 @@ h1,
 h2,
 h3 {
   color: var(--color-headings);
+  margin-bottom: 0;
 }
 
 h1 {
@@ -263,4 +264,21 @@ a {
   .skill .list__item {
     font-size: 1.3rem;
   }
+}
+
+/* Media */
+.media {
+  display: flex;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__title {
+  margin-top: 0;
 }
