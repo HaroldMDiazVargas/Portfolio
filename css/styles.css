@@ -121,6 +121,42 @@ h3 {
   }
 }
 
+/* Icons */
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon--heading {
+  fill: var(--color-headings);
+}
+
+.icon--outline {
+  fill: #fff;
+}
+
+.icon-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container--outline {
+  border: 2px solid #fff;
+}
+
+.icon-container--accent {
+  background-color: var(--color-accent);
+}
+.icon
 /* Cards */
 
 .card {
@@ -133,3 +169,5 @@ h3 {
   padding: 2rem 3rem;
   text-align: center;
 }
+
+/* Skills */
