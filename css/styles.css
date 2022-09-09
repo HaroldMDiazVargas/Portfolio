@@ -4,6 +4,7 @@
   --color-accent: #617fcf;
   --color-headings: #090117;
   --color-body: #918ca4;
+  --color-border: #ccc;
 }
 
 *,
@@ -61,63 +62,82 @@ h3 {
     font-size: 2.4 rem;
   }
 }
+/* Links */
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /* Buttons */
 
-.btn {
+.btn-group {
+  display: inline-flex;
+  align-items: center;
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  text-transform: capitalize;
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   border: 0;
   border-radius: 40px;
   cursor: pointer;
   white-space: nowrap;
+  background: #fff;
 }
 
-.btn--primary {
+.btn-group .icon {
+  width: 35px;
+  height: 35px;
+  padding-right: 1rem;
+}
+
+.btn-group:hover,
+.btn-group:hover .icon {
+  color: #fff;
+  fill: #fff;
+}
+
+.btn-group--primary {
   border: 3px solid var(--color-primary);
   color: var(--color-primary);
-  background: #fff;
 }
 
-.btn--primary:hover {
+.btn-group--primary:hover {
   background-color: var(--color-primary);
-  color: #fff;
 }
 
-.btn--secondary {
+.btn-group--secondary {
   border: 3px solid var(--color-secondary);
   color: var(--color-secondary);
-  background: #fff;
 }
 
-.btn--secondary:hover {
+.btn-group--secondary:hover {
   background-color: var(--color-secondary);
-  color: #fff;
 }
 
-.btn--accent {
+.btn-group--accent {
   border: 3px solid var(--color-accent);
   color: var(--color-accent);
-  background: #fff;
 }
 
-.btn--accent:hover {
+.btn-group--accent:hover {
   background-color: var(--color-accent);
-  color: #fff;
 }
 
-.btn--block {
+.btn-group--block {
   width: 100%;
-  display: inline-block;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
-  .btn {
+  .btn-group {
     font-size: 1.5rem;
     padding: 1rem 2rem;
+  }
+
+  .btn-group .icon {
+    width: 25px;
+    height: 25px;
+    padding-right: 1rem;
   }
 }
 
@@ -132,6 +152,19 @@ h3 {
   fill: var(--color-primary);
 }
 
+.icon--primary:hover {
+  fill: #fff;
+  /* color: #fff; */
+}
+
+.icon--accent {
+  fill: var(--color-accent);
+}
+
+.icon--accent:hover {
+  fill: #fff;
+  /* color: #fff; */
+}
 .icon--heading {
   fill: var(--color-headings);
 }
