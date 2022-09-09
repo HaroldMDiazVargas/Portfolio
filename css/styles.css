@@ -15,7 +15,7 @@
 
 /* Typography */
 
-html {
+:root {
   font-size: 62.5%;
 }
 
@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3 rem;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -281,4 +281,54 @@ a {
 
 .media__title {
   margin-top: 0;
+}
+
+/* quotes */
+
+.quote__text::before {
+  content: open-quote;
+}
+
+.quote__text::after {
+  content: close-quote;
+}
+
+.quote {
+  font-size: 3rem;
+  /* font-style: italic; */
+  color: var(--color-body);
+  /* text-align: center; */
+}
+
+.quote__author {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.quote__organization {
+  font-size: 1.5rem;
+  opacity: 0.6;
+  margin-top: 0;
+}
+
+.quote__symbol {
+  /* position: relative;
+  bottom: 10px; */
+}
+
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+  }
+
+  .quote__author {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  .quote__organization {
+    font-size: 1.3rem;
+    opacity: 0.6;
+    margin-top: 0;
+  }
 }
