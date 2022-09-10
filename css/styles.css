@@ -80,23 +80,20 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   padding: 1.5rem 3rem;
+  /* padding: 2rem 2rem; */
   border: 0;
   border-radius: 40px;
   cursor: pointer;
   white-space: nowrap;
-  background: #fff;
 }
 
-.btn-group .icon {
-  width: 35px;
-  height: 35px;
-  padding-right: 1rem;
+.btn-group__text {
+  padding-left: 1rem;
 }
 
-.btn-group:hover,
-.btn-group:hover .icon {
-  color: #fff;
-  fill: #fff;
+.btn-group--round {
+  border-radius: 100%;
+  padding: 1.5rem 1.5rem;
 }
 
 .btn-group--stretched {
@@ -106,29 +103,45 @@ a {
 
 .btn-group--primary {
   border: 3px solid var(--color-primary);
+  background-color: inherit;
   color: var(--color-primary);
+  fill: var(--color-primary);
 }
 
 .btn-group--primary:hover {
   background-color: var(--color-primary);
-}
-
-.btn-group--secondary {
-  border: 3px solid var(--color-secondary);
-  color: var(--color-secondary);
-}
-
-.btn-group--secondary:hover {
-  background-color: var(--color-secondary);
+  color: #fff;
+  fill: #fff;
 }
 
 .btn-group--accent {
   border: 3px solid var(--color-accent);
+  background-color: inherit;
+
   color: var(--color-accent);
+  fill: var(--color-accent);
 }
 
 .btn-group--accent:hover {
   background-color: var(--color-accent);
+  color: #fff;
+  fill: #fff;
+}
+
+.btn-group--outline {
+  border: 3px solid #fff;
+  color: #fff;
+  fill: #fff;
+  background-color: inherit;
+}
+
+.btn-group--outline:hover {
+  background-color: #fff;
+}
+
+.btn-group--background {
+  color: #fff;
+  fill: #fff;
 }
 
 .btn-group--block {
@@ -147,10 +160,8 @@ a {
     padding-right: 4rem;
   }
 
-  .btn-group .icon {
-    /* width: 25px;
-    height: 25px; */
-    padding-right: 1rem;
+  .btn-group--round {
+    padding: 1.5rem 1.5rem;
   }
 }
 
@@ -165,29 +176,9 @@ a {
   width: 25px;
   height: 25px;
 }
-.icon--primary {
-  fill: var(--color-primary);
-}
 
-.icon--primary:hover {
-  fill: #fff;
-  /* color: #fff; */
-}
-
-.icon--accent {
-  fill: var(--color-accent);
-}
-
-.icon--accent:hover {
-  fill: #fff;
-  /* color: #fff; */
-}
 .icon--heading {
   fill: var(--color-headings);
-}
-
-.icon--outline {
-  fill: #fff;
 }
 
 .icon-container {
@@ -199,9 +190,9 @@ a {
   align-items: center;
 }
 
-.icon-container--outline {
+/* .icon-container--outline {
   border: 2px solid #fff;
-}
+} */
 
 .icon-container--accent {
   background-color: var(--color-accent);
@@ -410,6 +401,12 @@ a {
 .callout--primary {
   background: var(--color-primary);
   color: #fff;
+}
+
+.callout--primary .btn-group--accent:hover,
+.callout--primary .btn-group--outline:hover {
+  color: var(--color-primary);
+  fill: var(--color-primary);
 }
 
 .callout__heading {
