@@ -33,6 +33,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 0;
+  line-height: 1.1;
 }
 
 h1 {
@@ -559,23 +560,34 @@ a {
   .nav__item {
     display: inline;
     border: 0;
-    /* width: fit-content; */
-    /* text-align: center; */
   }
+}
 
-  /* 
-  .nav .list-item {
-    display: inline;
-    margin-right: 2rem;
+/* Hero */
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__content {
+  margin-top: 1rem;
+  /* font-size: 0rem; */
+}
+
+.hero__header {
+  font-size: 6rem;
+}
+
+.hero__tagline {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: #333;
+  margin: 1.1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__image {
+    justify-self: center;
+    width: 70%;
   }
-
-  .nav__list {
-    height: fit-content;
-    width: fit-content;
-  }
-
-  .nav .collapsible {
-    height: 0;
-    overflow: hidden;
-  } */
 }
