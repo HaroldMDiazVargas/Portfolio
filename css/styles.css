@@ -610,3 +610,23 @@ a {
   max-width: 400px;
   margin: 0 auto;
 }
+
+/* apps */
+
+.app__name {
+  display: inline;
+}
+
+.app__summary,
+.app__address {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .app__summary {
+    font-size: 1.8rem;
+  }
+  .app__address {
+    font-size: 1.5rem;
+  }
+}
