@@ -71,6 +71,31 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.link-app {
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* border: 2px solid var(--color-accent); */
+  margin: 1rem 0;
+  padding: 0rem 0.8rem;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.link-app--accent {
+  color: var(--color-accent);
+  background-color: rgba(97, 127, 207, 0.2);
+  fill: var(--color-accent);
+}
+
+.link-app__url {
+  padding-left: 0.5rem;
+}
+
 /* Buttons */
 
 .btn-group {
