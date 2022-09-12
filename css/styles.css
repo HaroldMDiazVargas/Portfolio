@@ -163,6 +163,8 @@ a {
 
 .btn-group--outline:hover {
   background-color: #fff;
+  fill: inherit;
+  color: inherit;
 }
 
 .btn-group--background {
@@ -524,6 +526,14 @@ a {
   margin-top: 0;
 }
 
+.block--primary {
+  background: var(--color-primary);
+}
+
+.block--primary .btn-group--outline:hover {
+  fill: var(--color-primary);
+}
+
 .block--dark {
   background: #000;
   color: #7b858b;
@@ -689,4 +699,49 @@ a {
 
 .block-apps .card__body {
   padding-bottom: 4rem;
+}
+
+/* Footer */
+
+.footer {
+}
+
+.footer__networks {
+}
+
+.footer .grid {
+  justify-items: center;
+  row-gap: 3rem;
+}
+
+.footer__header {
+  font-size: 2.5rem;
+}
+
+.footer__brand {
+  --brandWidth: 100px;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.footer__brand svg:first-of-type {
+  width: var(--brandWidth);
+  padding: 0;
+}
+
+.footer__brand svg:last-of-type {
+  width: calc(var(--brandWidth) - 20px);
+  padding: 0;
+}
+
+.footer__phrase {
+  margin: 0;
+}
+
+.footer__copyright {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.footer__networks {
 }
