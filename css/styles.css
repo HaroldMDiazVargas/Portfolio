@@ -414,6 +414,13 @@ a {
   object-fit: cover;
 }
 
+.testimonial.card {
+  /* box-shadow: 0 0 20px 10px red; */
+  /* border: 30px solid red; */
+  box-shadow: none;
+  border: none;
+}
+
 @media screen and (min-width: 768px) {
   .testimonial .quote,
   .testimonial .quote__author {
@@ -529,6 +536,10 @@ a {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.container--medium {
+  max-width: 1000px;
 }
 
 /* Navigation Bar */
