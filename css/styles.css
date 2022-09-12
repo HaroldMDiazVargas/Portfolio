@@ -527,7 +527,7 @@ a {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -638,20 +638,44 @@ a {
 
 /* apps */
 
+.app__header {
+  padding-top: 4rem;
+}
+
 .app__name {
   display: inline;
 }
 
-.app__summary,
+.app__summary {
+  font-size: 1.8rem;
+}
+
 .app__address {
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 @media screen and (min-width: 1024px) {
+  .app__name {
+    font-size: 3rem;
+  }
   .app__summary {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
-  .app__address {
-    font-size: 1.5rem;
-  }
+}
+
+/* Apps Block */
+
+.block-apps .grid {
+  row-gap: 2rem;
+  column-gap: 2rem;
+  /* justify-items: center; */
+}
+
+.block-apps .card {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.block-apps .card__body {
+  padding-bottom: 4rem;
 }
