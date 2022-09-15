@@ -23,3 +23,29 @@ const calculateTip = () => {
   totalElements[1].innerHTML = `${totalBill.toFixed(2)}`;
   totalElements[2].innerHTML = `${perPersonPay.toFixed(2)}`;
 };
+
+// Calculator
+
+//Function To Display Values On screen
+function dis(value) {
+  document.getElementsByClassName("calculator__screen")[0].value += value;
+}
+
+// Function For Evaluation
+function solve() {
+  let x = document.getElementsByClassName("calculator__screen")[0].value;
+  let y = eval(x);
+  document.getElementsByClassName("calculator__screen")[0].value = y;
+}
+
+//Function For clearing the screen
+function clr() {
+  document.getElementsByClassName("calculator__screen")[0].value = "";
+}
+
+//backspacing
+function backspace() {
+  let screen = document.getElementsByClassName("calculator__screen")[0].value;
+  document.getElementsByClassName("calculator__screen")[0].value =
+    screen.substring(0, screen.length - 1);
+}

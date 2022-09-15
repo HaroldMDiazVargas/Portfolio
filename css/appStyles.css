@@ -1,3 +1,4 @@
+/* Tip Calculator */
 .calculator-tip {
   display: inline-flex;
   flex-direction: column;
@@ -70,4 +71,72 @@
 }
 .total__heading {
   margin: 0;
+}
+
+/* Numeric calculator */
+.calculator {
+  display: inline-flex;
+  max-width: 300px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* width: 290px; */
+  backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.calculator--secondary {
+  background: var(--color-secondary);
+  /* border: 1px solid rgba(255, 255, 255, 0.125); */
+}
+
+.calculator__screen {
+  font-size: 3rem;
+  color: white;
+  border-radius: 20px;
+  text-align: end;
+  width: 100%;
+  padding: 0 1rem;
+  border: none;
+  outline: none;
+  backdrop-filter: blur(16px) saturate(180%);
+  background: linear-gradient(45deg, rgb(114, 114, 114), #494949);
+  border-radius: 12px;
+}
+
+.calculator__btn {
+  height: 5rem;
+  width: 5rem;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(45deg, transparent, #494949);
+  transition: transform 0.3s;
+}
+
+.calculator__btn:hover {
+  transform: scale(0.95);
+}
+
+.calculator__btn-ch {
+  color: var(--color-primary);
+}
+
+.calculator__btn-clr {
+  color: #ef5b5b;
+}
+
+.calculator__btn-eq {
+  border-radius: 25px;
+  width: 100%;
+  background: var(--color-primary);
+  color: #fff;
 }

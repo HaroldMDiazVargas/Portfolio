@@ -748,15 +748,15 @@ a {
 /* apps */
 
 .app {
-  transition: transform 0.2s ease-out box-shadow 0.3s;
+  /* transition: box-shadow 0.3s; */
   background: #fff;
   border: 1px solid #e6dfdf;
 }
 
 .app:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 1px 1px #e6dfdf;
-  border: 0;
+  /* transform: scale(1.05); */
+  /* box-shadow: 0 0 1px 1px #e6dfdf; */
+  /* border: 0; */
 }
 
 .app__header {
