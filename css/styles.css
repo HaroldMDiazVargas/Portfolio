@@ -1,3 +1,5 @@
+@import url(appStyles.css);
+
 :root {
   --color-primary: #3300aa;
   --color-secondary: #1c1c1c;

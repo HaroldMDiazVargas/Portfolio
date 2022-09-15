@@ -356,6 +356,219 @@
       </div>
     </section>
 
+    <section class="block block--primary block--vertPadding">
+      <div class="block__header">
+        <div class="container container--small">
+          <h2 class="block__heading">My freelance projects</h2>
+          <p>
+            I've become implementing different apps of different levels to put
+            in practice my skills. My main goal is to improve all concepts until
+            to be able to create more large and complex apps.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block container block--noPadding block-apps">
+      <div class="grid grid--1x3">
+        <div class="app">
+          <div class="card">
+            <header class="card__header app__header">
+              <h2 class="app__name">Tip calculator</h2>
+              <p class="app__summary">
+                Calculates tip amount for given percentage of the cost of the
+                service.
+              </p>
+            </header>
+
+            <div class="card__body">
+              <div class="calculator-tip calculator-tip--primary">
+                <input
+                  type="number"
+                  oninput="calculateTip()"
+                  onchange="calculateTip()"
+                  id="totalBill"
+                  placeholder="Enter Your Bill"
+                  class="input input--accent"
+                />
+
+                <label class="calculator-tip__label" for="tipPercentage">
+                  <span>Tip %</span>
+                  <span class="calculator-tip__percent">15%</span>
+                </label>
+                <input
+                  type="range"
+                  oninput="calculateTip()"
+                  onchange="calculateTip()"
+                  id="tipPercentage"
+                  value="15"
+                  class="slider slider--accent"
+                />
+
+                <label class="calculator-tip__label" for="numOfPerson">
+                  <span> No. of people </span>
+                  <span class="calculator-tip__people">5</span>
+                </label>
+                <input
+                  type="range"
+                  oninput="calculateTip()"
+                  onchange="calculateTip()"
+                  id="numOfPerson"
+                  value="5"
+                  class="slider slider--accent"
+                />
+
+                <div class="calculator-tip__result" id="result">
+                  <div class="total">
+                    <h5 class="total__heading">Tip</h5>
+                    <span class="total__result">__.__</span>
+                  </div>
+
+                  <div class="total">
+                    <h5 class="total__heading">Total</h5>
+                    <span class="total__result">__.__</span>
+                  </div>
+
+                  <div class="total">
+                    <h5 class="total__heading">Each Person Pay</h5>
+                    <span class="total__result">__.__</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app">
+          <div class="card">
+            <header class="card__header app__header">
+              <svg class="icon icon--small icon--heading">
+                <use xlink:href="images/sprite.svg#newTab"></use>
+              </svg>
+
+              <h2 class="app__name">App1</h2>
+              <p class="app__summary">
+                I like to design databases and integrate with APIs
+              </p>
+            </header>
+
+            <div class="card__body">
+              <div class="link-app link-app--accent app__address">
+                <svg class="icon icon--small">
+                  <use xlink:href="images/sprite.svg#newTab"></use>
+                </svg>
+                <a href="" class="link-app__url"> www.google.com </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app">
+          <div class="card">
+            <header class="card__header app__header">
+              <svg class="icon icon--small icon--heading">
+                <use xlink:href="images/sprite.svg#newTab"></use>
+              </svg>
+
+              <h2 class="app__name">App1</h2>
+              <p class="app__summary">
+                I like to design databases and integrate with APIs
+              </p>
+            </header>
+
+            <div class="card__body">
+              <div class="link-app link-app--accent">
+                <svg class="icon icon--small">
+                  <use xlink:href="images/sprite.svg#newTab"></use>
+                </svg>
+                <a href="" class="link-app__url app__address">
+                  www.google.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app">
+          <div class="card">
+            <header class="card__header app__header">
+              <svg class="icon icon--small icon--heading">
+                <use xlink:href="images/sprite.svg#newTab"></use>
+              </svg>
+
+              <h2 class="app__name">App1</h2>
+              <p class="app__summary">
+                I like to design databases and integrate with APIs
+              </p>
+            </header>
+
+            <div class="card__body">
+              <div class="link-app link-app--accent">
+                <svg class="icon icon--small">
+                  <use xlink:href="images/sprite.svg#newTab"></use>
+                </svg>
+                <a href="" class="link-app__url app__address">
+                  www.google.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app">
+          <div class="card">
+            <header class="card__header app__header">
+              <svg class="icon icon--small icon--heading">
+                <use xlink:href="images/sprite.svg#newTab"></use>
+              </svg>
+
+              <h2 class="app__name">App1</h2>
+              <p class="app__summary">
+                I like to design databases and integrate with APIs
+              </p>
+            </header>
+
+            <div class="card__body">
+              <div class="link-app link-app--accent">
+                <svg class="icon icon--small">
+                  <use xlink:href="images/sprite.svg#newTab"></use>
+                </svg>
+                <a href="" class="link-app__url app__address">
+                  www.google.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app">
+          <div class="card">
+            <header class="card__header app__header">
+              <svg class="icon icon--small icon--heading">
+                <use xlink:href="images/sprite.svg#newTab"></use>
+              </svg>
+
+              <h2 class="app__name">App1</h2>
+              <p class="app__summary">
+                I like to design databases and integrate with APIs
+              </p>
+            </header>
+
+            <div class="card__body">
+              <div class="link-app link-app--accent">
+                <svg class="icon icon--small">
+                  <use xlink:href="images/sprite.svg#newTab"></use>
+                </svg>
+                <a href="" class="link-app__url app__address">
+                  www.google.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="block block--noPadding block--outline">
       <header class="block__header">
         <h2>Testimonials</h2>
@@ -483,6 +696,7 @@
       </div>
     </footer>
 
+    <script src="appScript.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
