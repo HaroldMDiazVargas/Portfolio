@@ -723,24 +723,62 @@
         <div class="app">
           <div class="card">
             <header class="card__header app__header">
-              <svg class="icon icon--small icon--heading">
-                <use xlink:href="images/sprite.svg#newTab"></use>
-              </svg>
-
-              <h2 class="app__name">App1</h2>
+              <h2 class="app__name">Audio player</h2>
               <p class="app__summary">
                 I like to design databases and integrate with APIs
               </p>
             </header>
 
             <div class="card__body">
-              <div class="link-app link-app--accent">
-                <svg class="icon icon--small">
-                  <use xlink:href="images/sprite.svg#newTab"></use>
-                </svg>
-                <a href="" class="link-app__url app__address">
-                  www.google.com
-                </a>
+              <div class="player">
+                <!-- Define the section for displaying details -->
+                <div class="details">
+                  <div class="now-playing">PLAYING x OF y</div>
+                  <div class="track-art"></div>
+                  <div class="track-name">Track Name</div>
+                  <div class="track-artist">Track Artist</div>
+                </div>
+
+                <!-- Define the section for displaying track buttons -->
+                <div class="buttons">
+                  <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                  </div>
+                  <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                  </div>
+                  <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                  </div>
+                </div>
+
+                <!-- Define the section for displaying the seek slider-->
+                <div class="slider_container">
+                  <div class="current-time">00:00</div>
+                  <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    value="0"
+                    class="seek_slider range"
+                    onchange="seekTo()"
+                  />
+                  <div class="total-duration">00:00</div>
+                </div>
+
+                <!-- Define the section for displaying the volume slider-->
+                <div class="slider_container">
+                  <i class="fa fa-volume-down"></i>
+                  <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    value="99"
+                    class="volume_slider range"
+                    onchange="setVolume()"
+                  />
+                  <i class="fa fa-volume-up"></i>
+                </div>
               </div>
             </div>
           </div>
