@@ -329,3 +329,67 @@ i.fa-step-forward,
 i.fa-step-backward {
   cursor: pointer;
 }
+
+/* Draggable todo list */
+
+.board {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.board__column {
+  background: var(--color-secondary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.board__heading {
+  margin: 0;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.column-todo .board__heading {
+  background: #eb365a;
+}
+
+.column-ip .board__heading {
+  background: var(--color-accent);
+}
+
+.column-done .board__heading {
+  background: #3654eb;
+}
+
+.board__column.drop {
+  border: 2px dashed var(--color-accent);
+}
+
+.board__column.drop .board__item {
+  pointer-events: none;
+}
+
+.board__item {
+  text-align: left;
+  cursor: grab;
+  width: 20rem;
+  height: 6rem;
+  background: #3f4447;
+  margin: 1rem;
+  padding-left: 1rem;
+  font-weight: 400;
+  border-radius: 3px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.board__item:active {
+  cursor: grabbing;
+}
+
+.board__item.dragging {
+  opacity: 0.5;
+  transform: scale(0.8);
+}

@@ -338,3 +338,67 @@ function seekUpdate() {
 
 // Load the first track in the tracklist
 loadTrack(track_index);
+
+//  Todo draggable list
+
+const dragStart = (event) => {
+  // console.log(event);
+  event.classList.add("dragging");
+};
+
+const dragEnd = (event) => {
+  event.classList.remove("dragging");
+};
+
+const dragEnter = (event) => {
+  // console.log(event);
+  event.currentTarget.classList.add("drop");
+};
+
+const dragLeave = (event) => {
+  // console.log(event);
+  event.currentTarget.classList.remove("drop");
+};
+
+const drag = (event) => {
+  // console.log(event);
+  event.dataTransfer.setData("text/html", event.currentTarget.outerHTML);
+  event.dataTransfer.setData("text/plain", event.currentTarget.dataset.id);
+};
+
+const drop = (event) => {
+  // console.log(event);
+  document
+    .querySelectorAll(".board__column")
+    .forEach((column) => column.classList.remove("drop"));
+
+  document
+    .querySelector(`[data-id="${event.dataTransfer.getData("text/plain")}"]`)
+    .remove();
+
+  event.preventDefault();
+
+  event.currentTarget.innerHTML =
+    event.currentTarget.innerHTML + event.dataTransfer.getData("text/html");
+};
+
+const allowDrop = (event) => {
+  event.preventDefault();
+};
+
+document.querySelectorAll(".board__column").forEach((column) => {
+  column.addEventListener("dragenter", dragEnter);
+  column.addEventListener("dragleave", dragLeave);
+});
+
+document.addEventListener("dragstart", (e) => {
+  if (e.target.className.includes("board__item")) {
+    dragStart(e.target);
+  }
+});
+
+document.addEventListener("dragend", (e) => {
+  if (e.target.className.includes("board__item")) {
+    dragEnd(e.target);
+  }
+});

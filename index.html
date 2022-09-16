@@ -783,6 +783,141 @@
             </div>
           </div>
         </div>
+
+        <div class="app app--2span">
+          <div class="card">
+            <header class="card__header app__header">
+              <h2 class="app__name">Draggable todo list</h2>
+              <p class="app__summary">
+                I like to design databases and integrate with APIs
+              </p>
+            </header>
+
+            <div class="card__body">
+              <div class="board">
+                <div
+                  class="board__column column-todo"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                >
+                  <h3 class="board__heading">Todo</h3>
+                  <h4
+                    class="board__item"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    data-id="1"
+                  >
+                    Todo #1
+                  </h4>
+                  <h4
+                    class="board__item"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    data-id="2"
+                  >
+                    Todo #2
+                  </h4>
+                  <h4
+                    class="board__item"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    data-id="3"
+                  >
+                    Todo #3
+                  </h4>
+                  <h4
+                    class="board__item"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    data-id="4"
+                  >
+                    Todo #4
+                  </h4>
+                </div>
+
+                <div
+                  class="board__column column-ip"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                >
+                  <h3 class="board__heading">In Progress</h3>
+                  <h4
+                    class="board__item"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    data-id="5"
+                  >
+                    IP #1
+                  </h4>
+                  <h4
+                    class="board__item"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    data-id="6"
+                  >
+                    IP #2
+                  </h4>
+                  <h4
+                    class="board__item"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    data-id="7"
+                  >
+                    IP #3
+                  </h4>
+                  <h4
+                    class="board__item"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    data-id="8"
+                  >
+                    IP #4
+                  </h4>
+                </div>
+
+                <div
+                  class="board__column column-done"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                >
+                  <h3 class="board__heading">Done</h3>
+                  <h4
+                    class="board__item"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    data-id="9"
+                  >
+                    Done #1
+                  </h4>
+                  <h4
+                    class="board__item"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    data-id="10"
+                  >
+                    Done #2
+                  </h4>
+                  <h4
+                    class="board__item"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    data-id="11"
+                  >
+                    Done #3
+                  </h4>
+                  <h4
+                    class="board__item"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    data-id="12"
+                  >
+                    Done #4
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
