@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header class="container">
@@ -382,7 +388,7 @@
             </header>
 
             <div class="card__body">
-              <div class="calculator-tip calculator-tip--primary">
+              <div class="calculator-tip">
                 <input
                   type="number"
                   oninput="calculateTip()"
@@ -418,7 +424,7 @@
                   class="slider slider--accent"
                 />
 
-                <div class="calculator-tip__result" id="result">
+                <div class="calculator-tip__result block--primary" id="result">
                   <div class="total">
                     <h5 class="total__heading">Tip</h5>
                     <span class="total__result">__.__</span>
@@ -449,7 +455,7 @@
             </header>
 
             <div class="card__body">
-              <div class="calculator calculator--secondary">
+              <div class="calculator block--secondary">
                 <input type="text" class="calculator__screen" placeholder="0" />
 
                 <table>
@@ -598,13 +604,16 @@
             </header>
 
             <div class="card__body">
-              <div class="quote-gen">
+              <div class="quote-gen block--secondary">
                 <p class="quote-gen__text">
                   Try not to become a man of success but rather try to become a
                   man of value.
                 </p>
                 <p class="quote-gen__author">By Author</p>
-                <button onclick="generateQuote()">
+                <button
+                  onclick="generateQuote()"
+                  class="btn-group btn-group--accent btn-group--stretched quote-gen__btn"
+                >
                   <span class="fas fa-sync"></span>
                 </button>
               </div>
@@ -615,26 +624,13 @@
         <div class="app">
           <div class="card">
             <header class="card__header app__header">
-              <svg class="icon icon--small icon--heading">
-                <use xlink:href="images/sprite.svg#newTab"></use>
-              </svg>
-
-              <h2 class="app__name">App1</h2>
+              <h2 class="app__name"></h2>
               <p class="app__summary">
                 I like to design databases and integrate with APIs
               </p>
             </header>
 
-            <div class="card__body">
-              <div class="link-app link-app--accent">
-                <svg class="icon icon--small">
-                  <use xlink:href="images/sprite.svg#newTab"></use>
-                </svg>
-                <a href="" class="link-app__url app__address">
-                  www.google.com
-                </a>
-              </div>
-            </div>
+            <div class="card__body"></div>
           </div>
         </div>
 

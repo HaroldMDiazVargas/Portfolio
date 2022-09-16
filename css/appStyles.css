@@ -5,8 +5,7 @@
   padding: 0 3rem 2rem;
 }
 
-.calculator-tip--primary .calculator-tip__result {
-  background-color: var(--color-primary);
+.calculator-tip__result {
   border-radius: 15px;
 }
 
@@ -86,11 +85,6 @@
   padding: 2rem;
 }
 
-.calculator--secondary {
-  background: var(--color-secondary);
-  /* border: 1px solid rgba(255, 255, 255, 0.125); */
-}
-
 .calculator__screen {
   font-size: 3rem;
   color: white;
@@ -139,4 +133,26 @@
   width: 100%;
   background: var(--color-primary);
   color: #fff;
+}
+
+/* Random Quote Generator */
+
+.quote-gen {
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 50% 25% 25%;
+  justify-items: center;
+  align-items: center;
+  padding: 3rem 3rem 1.5rem;
+  font-size: 1.7rem;
+  height: 300px;
+  color: #fff;
+}
+
+.quote-gen__text {
+  margin: 0;
+}
+
+.quote-gen__author {
+  font-size: 2.2rem;
 }

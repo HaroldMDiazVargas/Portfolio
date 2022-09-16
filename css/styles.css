@@ -564,6 +564,10 @@ a {
   background: var(--color-primary);
 }
 
+.block--secondary {
+  background: var(--color-secondary);
+}
+
 .block--outline {
   border-top: 1px solid #e6dfdf;
 }

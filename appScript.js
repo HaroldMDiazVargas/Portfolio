@@ -49,3 +49,23 @@ function backspace() {
   document.getElementsByClassName("calculator__screen")[0].value =
     screen.substring(0, screen.length - 1);
 }
+
+// Random quote generator
+
+const generateQuote = () => {
+  let url = "https://type.fit/api/quotes";
+  fetch(url)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      let randNum = Math.floor(Math.random() * 1500 + 1);
+      let randomQuote = data[randNum];
+      document.getElementsByClassName(
+        "quote-gen__text"
+      )[0].innerHTML = `"${randomQuote.text}"`;
+      document.getElementsByClassName("quote-gen__author")[0].innerHTML = `- ${
+        randomQuote.author ? randomQuote.author : ""
+      }`;
+    });
+};
