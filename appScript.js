@@ -402,3 +402,22 @@ document.addEventListener("dragend", (e) => {
     dragEnd(e.target);
   }
 });
+
+// Generate QR
+
+function generateQr() {
+  let qrTextInput = document.querySelector(".qr__text");
+
+  if (!qrTextInput.checkValidity()) {
+    document.querySelector(".qr__alert").innerHTML =
+      qrTextInput.validationMessage;
+    document.querySelector(".qr__image").classList.add("hidden");
+  } else {
+    let qrText = qrTextInput.value;
+
+    document.querySelector(".qr__alert").innerHTML = "";
+    document.querySelector(".qr__image").classList.remove("hidden");
+    document.querySelector(".qr__image").src =
+      "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=" + qrText;
+  }
+}

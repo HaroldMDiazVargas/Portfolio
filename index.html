@@ -606,33 +606,6 @@
         <div class="app">
           <div class="card">
             <header class="card__header app__header">
-              <h2 class="app__name">Random Quote Generator</h2>
-              <p class="app__summary">
-                Automatic quote random generator from quotes API.
-              </p>
-            </header>
-
-            <div class="card__body">
-              <div class="quote-gen block--secondary">
-                <p class="quote-gen__text">
-                  Try not to become a man of success but rather try to become a
-                  man of value.
-                </p>
-                <p class="quote-gen__author">By Author</p>
-                <button
-                  onclick="generateQuote()"
-                  class="btn-group btn-group--accent btn-group--stretched quote-gen__btn"
-                >
-                  <span class="fas fa-sync"></span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="app">
-          <div class="card">
-            <header class="card__header app__header">
               <h2 class="app__name">Digital clock</h2>
               <p class="app__summary">
                 I like to design databases and integrate with APIs
@@ -652,6 +625,33 @@
                 <div class="dig-clock__time">
                   <span id="sec"></span>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app">
+          <div class="card">
+            <header class="card__header app__header">
+              <h2 class="app__name">Random Quote Generator</h2>
+              <p class="app__summary">
+                Automatic quote random generator from quotes API.
+              </p>
+            </header>
+
+            <div class="card__body">
+              <div class="quote-gen block--secondary">
+                <p class="quote-gen__text">
+                  Try not to become a man of success but rather try to become a
+                  man of value.
+                </p>
+                <p class="quote-gen__author">By Author</p>
+                <button
+                  onclick="generateQuote()"
+                  class="btn-group btn-group--accent btn-group--stretched quote-gen__btn"
+                >
+                  <span class="fas fa-sync"></span>
+                </button>
               </div>
             </div>
           </div>
@@ -913,6 +913,36 @@
                   >
                     Done #4
                   </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app">
+          <div class="card">
+            <header class="card__header app__header">
+              <h2 class="app__name">QR Code generator</h2>
+              <p class="app__summary">
+                I like to design databases and integrate with APIs
+              </p>
+            </header>
+
+            <div class="card__body">
+              <div class="qr">
+                <input
+                  type="text"
+                  required
+                  placeholder="text..."
+                  class="qr__text"
+                />
+                <div class="qr__alert"></div>
+                <button type="button" onclick="generateQr()">
+                  Generate QR
+                </button>
+
+                <div>
+                  <img class="qr__image" src="" alt="" />
                 </div>
               </div>
             </div>
