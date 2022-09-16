@@ -15,6 +15,15 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"
+    />
   </head>
   <body>
     <header class="container">
@@ -408,7 +417,7 @@
                   onchange="calculateTip()"
                   id="tipPercentage"
                   value="15"
-                  class="slider slider--accent"
+                  class="range range--accent"
                 />
 
                 <label class="calculator-tip__label" for="numOfPerson">
@@ -421,7 +430,7 @@
                   onchange="calculateTip()"
                   id="numOfPerson"
                   value="5"
-                  class="slider slider--accent"
+                  class="range range--accent"
                 />
 
                 <div class="calculator-tip__result block--primary" id="result">
@@ -651,24 +660,61 @@
         <div class="app">
           <div class="card">
             <header class="card__header app__header">
-              <svg class="icon icon--small icon--heading">
-                <use xlink:href="images/sprite.svg#newTab"></use>
-              </svg>
-
-              <h2 class="app__name">App1</h2>
+              <h2 class="app__name">Slick slider</h2>
               <p class="app__summary">
                 I like to design databases and integrate with APIs
               </p>
             </header>
 
             <div class="card__body">
-              <div class="link-app link-app--accent">
-                <svg class="icon icon--small">
-                  <use xlink:href="images/sprite.svg#newTab"></use>
-                </svg>
-                <a href="" class="link-app__url app__address">
-                  www.google.com
-                </a>
+              <div class="slider">
+                <div class="slide slider__top">
+                  <div class="slider__content">
+                    <img src="images/free/sky.jpg" />
+                  </div>
+                  <div class="slider__content">
+                    <img src="images/free/birds.jpg" alt="" srcset="" />
+                  </div>
+                  <div class="slider__content">
+                    <img src="images/free/grandCanyon.jpg" alt="" srcset="" />
+                  </div>
+                  <div class="slider__content">
+                    <img src="images/free/mountains.jpg" alt="" srcset="" />
+                  </div>
+                  <div class="slider__content">
+                    <img src="images/free/patio.jpg" alt="" srcset="" />
+                  </div>
+                </div>
+
+                <div class="slide slider__bottom">
+                  <div class="slider__content">
+                    <img src="images/free/ranbow.jpg" alt="" srcset="" />
+                  </div>
+                  <div class="slider__content">
+                    <img src="images/free/sea.jpg" alt="" srcset="" />
+                  </div>
+                  <div class="slider__content">
+                    <img src="images/free/sunset.jpg" alt="" srcset="" />
+                  </div>
+                  <div class="slider__content">
+                    <img src="images/free/tower.jpg" alt="" srcset="" />
+                  </div>
+                  <div class="slider__content">
+                    <img src="images/free/village.jpg" alt="" srcset="" />
+                  </div>
+                </div>
+
+                <div class="slider__action">
+                  <button class="btn-group btn-group--primary" data-slide="3">
+                    Slide 3
+                  </button>
+                  <button class="btn-group btn-group--primary" data-slide="4">
+                    Slide 4
+                  </button>
+                  <button class="btn-group btn-group--primary" data-slide="5">
+                    Slide 5
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -829,6 +875,8 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="appScript.js"></script>
     <script src="script.js"></script>
   </body>

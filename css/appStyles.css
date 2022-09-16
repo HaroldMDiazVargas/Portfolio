@@ -29,13 +29,13 @@
   opacity: 0.7;
 }
 
-.slider {
+.range {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.slider--accent::-webkit-slider-thumb {
+.range--accent::-webkit-slider-thumb {
   appearance: none;
   width: 15px;
   height: 15px;
@@ -44,15 +44,15 @@
   border-radius: 50%;
 }
 
-.slider--accent {
+.range--accent {
   background: var(--color-secondary);
   color: var(--color-accent);
   opacity: 0.7;
   transition: opacity 0.2s;
 }
 
-.input--accent:hover,
-.slider--accent:hover {
+.input--accent:focus,
+.range--accent:hover {
   opacity: 1;
 }
 
@@ -173,4 +173,26 @@
   text-align: center;
   min-width: 8rem;
   font-size: 3rem;
+}
+
+/* Slick slider */
+
+.slide {
+  box-shadow: 0 0 40px var(--color-secondary);
+}
+
+.slider {
+  margin: 0 auto;
+}
+
+.slider__content img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.slider__action {
+  margin: 5rem auto 0;
+  width: 100%;
+  font-size: 1.5rem;
 }
