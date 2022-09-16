@@ -69,3 +69,28 @@ const generateQuote = () => {
       }`;
     });
 };
+
+// Digital Clock
+
+setInterval(showTime, 1000);
+
+function showTime() {
+  let date = new Date();
+  let hour = date.getHours() % 12 || 12;
+  let seconds = date.getSeconds();
+  let minutes = date.getMinutes();
+
+  if (hour < 10) {
+    hour = "0" + hour;
+  }
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+  if (seconds < 10) {
+    seconds = "0" + seconds;
+  }
+
+  document.getElementById("hour").innerHTML = hour;
+  document.getElementById("minute").innerHTML = minutes;
+  document.getElementById("sec").innerHTML = seconds;
+}

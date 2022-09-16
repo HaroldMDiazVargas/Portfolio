@@ -156,3 +156,21 @@
 .quote-gen__author {
   font-size: 2.2rem;
 }
+
+/* Digital clock */
+
+.dig-clock {
+  display: flex;
+  justify-content: cen;
+}
+
+.dig-clock__time {
+  background: var(--color-secondary);
+  margin: 1rem;
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 5px 14px 1px #16161652;
+  text-align: center;
+  min-width: 8rem;
+  font-size: 3rem;
+}
