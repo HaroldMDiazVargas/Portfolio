@@ -411,11 +411,13 @@ function generateQr() {
   if (!qrTextInput.checkValidity()) {
     document.querySelector(".qr__alert").innerHTML =
       qrTextInput.validationMessage;
+    document.querySelector(".input-group").classList.add("invalid");
     document.querySelector(".qr__image").classList.add("hidden");
   } else {
     let qrText = qrTextInput.value;
 
     document.querySelector(".qr__alert").innerHTML = "";
+    document.querySelector(".input-group").classList.remove("invalid");
     document.querySelector(".qr__image").classList.remove("hidden");
     document.querySelector(".qr__image").src =
       "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=" + qrText;

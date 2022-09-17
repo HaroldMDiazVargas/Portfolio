@@ -930,20 +930,25 @@
 
             <div class="card__body">
               <div class="qr">
-                <input
-                  type="text"
-                  required
-                  placeholder="text..."
-                  class="qr__text"
-                />
-                <div class="qr__alert"></div>
-                <button type="button" onclick="generateQr()">
-                  Generate QR
-                </button>
-
-                <div>
-                  <img class="qr__image" src="" alt="" />
+                <div class="input-group">
+                  <input
+                    type="text"
+                    required
+                    placeholder="text..."
+                    class="qr__text input input--accent"
+                  />
+                  <button
+                    type="button"
+                    class="btn-group btn-group--accent"
+                    onclick="generateQr()"
+                  >
+                    Generate QR
+                  </button>
                 </div>
+
+                <div class="qr__alert"></div>
+
+                <img class="qr__image" src="" alt="" />
               </div>
             </div>
           </div>

@@ -161,7 +161,9 @@
 
 .dig-clock {
   display: flex;
-  justify-content: cen;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
 
 .dig-clock__time {
@@ -376,7 +378,7 @@ i.fa-step-backward {
   text-align: left;
   cursor: grab;
   width: 20rem;
-  height: 6rem;
+  /* height: 2rem; */
   background: #3f4447;
   margin: 1rem;
   padding-left: 1rem;
@@ -392,4 +394,41 @@ i.fa-step-backward {
 .board__item.dragging {
   opacity: 0.5;
   transform: scale(0.8);
+}
+
+/* QR Code Generator */
+
+.input-group {
+  border: 2px solid var(--color-secondary);
+  background: var(--color-secondary);
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  /* border-collapse: collapse; */
+}
+
+.input-group .input {
+  flex-grow: 1;
+  width: 0;
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.input-group .btn-group {
+  margin: 2px;
+}
+
+.qr__alert {
+  color: #f44336;
+}
+.input-group.invalid {
+  border-left: 3px solid #f44336;
+}
+.qr__image {
+  margin-top: 2rem;
+  height: 120px;
+}
+
+.hidden {
+  display: none;
 }

@@ -756,9 +756,6 @@ a {
   background: #fff;
   border: 1px solid #e6dfdf;
 }
-.app--2span {
-  grid-column: 1 / span 2;
-}
 
 .app:hover {
   /* transform: scale(1.05); */
@@ -780,6 +777,12 @@ a {
 
 .app__address {
   font-size: 1.3rem;
+}
+
+@@media screen and (min-width: 768px) {
+  .app--2span {
+    grid-column: 1 / span 2;
+  }
 }
 
 @media screen and (min-width: 1024px) {
