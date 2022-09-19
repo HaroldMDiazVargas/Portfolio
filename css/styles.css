@@ -122,10 +122,14 @@ a {
   border-radius: 40px;
   cursor: pointer;
   white-space: nowrap;
+  width: max-content;
 }
 
 .btn-group__text {
   padding-left: 1rem;
+  display: none;
+  /* flex-grow: 1; */
+  /* width: 0; */
 }
 
 .btn-group--round {
@@ -186,6 +190,12 @@ a {
 .btn-group--block {
   width: 100%;
   justify-content: center;
+}
+
+@media screen and (min-width: 718px) {
+  .btn-group__text {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -276,6 +286,7 @@ a {
   transition: transform 0.2s ease-out box-shadow 0.3s;
   background: #fff;
   border: 1px solid #e6dfdf;
+  max-width: 400px;
 }
 
 .skill__name {
@@ -739,6 +750,7 @@ a {
   row-gap: 3rem;
   column-gap: 2rem;
   transform: translateY(-15rem);
+  justify-content: center;
   /* z-index: 10; */
   /* justify-items: center; */
 }
@@ -755,6 +767,7 @@ a {
   /* transition: box-shadow 0.3s; */
   background: #fff;
   border: 1px solid #e6dfdf;
+  max-width: 400px;
 }
 
 .app:hover {
@@ -779,12 +792,6 @@ a {
   font-size: 1.3rem;
 }
 
-@@media screen and (min-width: 768px) {
-  .app--2span {
-    grid-column: 1 / span 2;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .app__name {
     font-size: 3rem;
@@ -792,6 +799,10 @@ a {
   .app__summary {
     font-size: 2rem;
   }
+
+  /* .app--2span {
+    grid-column: 1 / span 1;
+  } */
 }
 
 /* Apps Block */
@@ -803,6 +814,7 @@ a {
   row-gap: 2rem;
   column-gap: 2rem;
   transform: translateY(-15rem);
+  justify-content: center;
   /* justify-items: center; */
 }
 

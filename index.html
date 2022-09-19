@@ -94,7 +94,7 @@
     </section>
 
     <section class="block block--noPadding container block-skills">
-      <div class="grid grid--1x3">
+      <div class="grid grid--1x2 grid--1x3">
         <div class="skill">
           <div class="card">
             <header class="card__header">
@@ -214,7 +214,7 @@
     </section>
 
     <section class="block container block--noPadding block-apps">
-      <div class="grid grid--1x3">
+      <div class="grid grid--1x2 grid--1x3">
         <div class="app">
           <div class="card">
             <header class="card__header app__header">
@@ -385,7 +385,7 @@
     </section>
 
     <section class="block container block--noPadding block-apps">
-      <div class="grid grid--1x3">
+      <div class="grid grid--1x2 grid--1x3">
         <div class="app">
           <div class="card">
             <header class="card__header app__header">
@@ -614,16 +614,16 @@
 
             <div class="card__body">
               <div class="dig-clock">
-                <div class="dig-clock__time">
-                  <span id="hour"></span>
+                <div id="hour" class="dig-clock__time">
+                  <!-- <span id="hour"></span> -->
                 </div>
 
-                <div class="dig-clock__time">
-                  <span id="minute"></span>
+                <div id="minute" class="dig-clock__time">
+                  <!-- <span id="minute"></span> -->
                 </div>
 
-                <div class="dig-clock__time">
-                  <span id="sec"></span>
+                <div id="sec" class="dig-clock__time">
+                  <!-- <span id="sec"></span> -->
                 </div>
               </div>
             </div>
@@ -666,56 +666,56 @@
               </p>
             </header>
 
-            <div class="card__body">
-              <div class="slider">
-                <div class="slide slider__top">
-                  <div class="slider__content">
-                    <img src="images/free/sky.jpg" />
-                  </div>
-                  <div class="slider__content">
-                    <img src="images/free/birds.jpg" alt="" srcset="" />
-                  </div>
-                  <div class="slider__content">
-                    <img src="images/free/grandCanyon.jpg" alt="" srcset="" />
-                  </div>
-                  <div class="slider__content">
-                    <img src="images/free/mountains.jpg" alt="" srcset="" />
-                  </div>
-                  <div class="slider__content">
-                    <img src="images/free/patio.jpg" alt="" srcset="" />
-                  </div>
+            <div class="card__body slider">
+              <!-- <div class=""> -->
+              <div class="slide slider__top">
+                <div class="slider__content">
+                  <img src="images/free/sky.jpg" />
                 </div>
-
-                <div class="slide slider__bottom">
-                  <div class="slider__content">
-                    <img src="images/free/ranbow.jpg" alt="" srcset="" />
-                  </div>
-                  <div class="slider__content">
-                    <img src="images/free/sea.jpg" alt="" srcset="" />
-                  </div>
-                  <div class="slider__content">
-                    <img src="images/free/sunset.jpg" alt="" srcset="" />
-                  </div>
-                  <div class="slider__content">
-                    <img src="images/free/tower.jpg" alt="" srcset="" />
-                  </div>
-                  <div class="slider__content">
-                    <img src="images/free/village.jpg" alt="" srcset="" />
-                  </div>
+                <div class="slider__content">
+                  <img src="images/free/birds.jpg" alt="" srcset="" />
                 </div>
-
-                <div class="slider__action">
-                  <button class="btn-group btn-group--primary" data-slide="3">
-                    Slide 3
-                  </button>
-                  <button class="btn-group btn-group--primary" data-slide="4">
-                    Slide 4
-                  </button>
-                  <button class="btn-group btn-group--primary" data-slide="5">
-                    Slide 5
-                  </button>
+                <div class="slider__content">
+                  <img src="images/free/grandCanyon.jpg" alt="" srcset="" />
+                </div>
+                <div class="slider__content">
+                  <img src="images/free/mountains.jpg" alt="" srcset="" />
+                </div>
+                <div class="slider__content">
+                  <img src="images/free/patio.jpg" alt="" srcset="" />
                 </div>
               </div>
+
+              <div class="slide slider__bottom">
+                <div class="slider__content">
+                  <img src="images/free/ranbow.jpg" alt="" srcset="" />
+                </div>
+                <div class="slider__content">
+                  <img src="images/free/sea.jpg" alt="" srcset="" />
+                </div>
+                <div class="slider__content">
+                  <img src="images/free/sunset.jpg" alt="" srcset="" />
+                </div>
+                <div class="slider__content">
+                  <img src="images/free/tower.jpg" alt="" srcset="" />
+                </div>
+                <div class="slider__content">
+                  <img src="images/free/village.jpg" alt="" srcset="" />
+                </div>
+              </div>
+
+              <div class="slider__action">
+                <button class="btn-group btn-group--primary" data-slide="3">
+                  Slide 3
+                </button>
+                <button class="btn-group btn-group--primary" data-slide="4">
+                  Slide 4
+                </button>
+                <button class="btn-group btn-group--primary" data-slide="5">
+                  Slide 5
+                </button>
+              </div>
+              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -731,7 +731,6 @@
 
             <div class="card__body">
               <div class="player">
-                <!-- Define the section for displaying details -->
                 <div class="details">
                   <div class="now-playing">PLAYING x OF y</div>
                   <div class="track-art"></div>
@@ -739,7 +738,6 @@
                   <div class="track-artist">Track Artist</div>
                 </div>
 
-                <!-- Define the section for displaying track buttons -->
                 <div class="buttons">
                   <div class="prev-track" onclick="prevTrack()">
                     <i class="fa fa-step-backward fa-2x"></i>
@@ -752,7 +750,6 @@
                   </div>
                 </div>
 
-                <!-- Define the section for displaying the seek slider-->
                 <div class="slider_container">
                   <div class="current-time">00:00</div>
                   <input
@@ -766,7 +763,6 @@
                   <div class="total-duration">00:00</div>
                 </div>
 
-                <!-- Define the section for displaying the volume slider-->
                 <div class="slider_container">
                   <i class="fa fa-volume-down"></i>
                   <input
@@ -784,7 +780,42 @@
           </div>
         </div>
 
-        <div class="app app--2span">
+        <div class="app">
+          <div class="card">
+            <header class="card__header app__header">
+              <h2 class="app__name">QR Code generator</h2>
+              <p class="app__summary">
+                I like to design databases and integrate with APIs
+              </p>
+            </header>
+
+            <div class="card__body">
+              <div class="qr">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    required
+                    placeholder="text..."
+                    class="qr__text input input--accent"
+                  />
+                  <button
+                    type="button"
+                    class="btn-group btn-group--accent"
+                    onclick="generateQr()"
+                  >
+                    Generate QR
+                  </button>
+                </div>
+
+                <div class="qr__alert"></div>
+
+                <img class="qr__image" src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app">
           <div class="card">
             <header class="card__header app__header">
               <h2 class="app__name">Draggable todo list</h2>
@@ -918,41 +949,6 @@
             </div>
           </div>
         </div>
-
-        <div class="app">
-          <div class="card">
-            <header class="card__header app__header">
-              <h2 class="app__name">QR Code generator</h2>
-              <p class="app__summary">
-                I like to design databases and integrate with APIs
-              </p>
-            </header>
-
-            <div class="card__body">
-              <div class="qr">
-                <div class="input-group">
-                  <input
-                    type="text"
-                    required
-                    placeholder="text..."
-                    class="qr__text input input--accent"
-                  />
-                  <button
-                    type="button"
-                    class="btn-group btn-group--accent"
-                    onclick="generateQr()"
-                  >
-                    Generate QR
-                  </button>
-                </div>
-
-                <div class="qr__alert"></div>
-
-                <img class="qr__image" src="" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -1026,7 +1022,7 @@
             <svg class="icon icon--accent">
               <use xlink:href="images/sprite.svg#handshake-simple-solid"></use>
             </svg>
-            <a href=""> Let's get in touch </a>
+            <a class="btn-group__text" href=""> Let's get in touch </a>
           </button>
         </div>
       </div>
