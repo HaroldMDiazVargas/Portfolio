@@ -28,8 +28,8 @@ module.exports = merge(common, {
       // }
     }),
     new MiniCssExtractPlugin({
-      filename: "style.bundle.[contenthash].css", //style.bundle.[hash].css"
-      chunkFilename: "[id].[hash].css", //"[id].[hash].css"
+      filename: "style.[name].[contenthash].css", //style.bundle.[hash].css"  style.bundle.[contenthash].css",
+      chunkFilename: "[id].[contenthash].css", //"[id].[hash].css"
     }),
   ],
 
@@ -39,19 +39,18 @@ module.exports = merge(common, {
       `...`,
       new CssMinimizerPlugin(),
     ],
+    // moduleIds: "deterministic",
+    runtimeChunk: "single",
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all",
+        },
+      },
+    },
   },
-  // optimization: {
-  //   // moduleIds: "deterministic",
-  //   runtimeChunk: "single",
-  //   splitChunks: {
-  //     cacheGroups: {
-  //       vendor: {
-  //         test: /[\\/]node_modules[\\/]/,
-  //         name: "vendors",
-  //         chunks: "all",
-  //       },
-  //     },
-  //   },
 
   //   // removeAvailableModules: false, //Dev
   //   // removeEmptyChunks: false, //Dev
