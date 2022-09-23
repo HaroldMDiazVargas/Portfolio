@@ -1,2 +1,5 @@
 images/icons/
 components/nativeApps/
+node_modules/
+dist/
+public/
