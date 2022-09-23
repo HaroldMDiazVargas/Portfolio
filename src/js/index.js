@@ -7,13 +7,16 @@ import { slickSlider } from "./apps/slickSlider";
 import { AudioPlayer } from "./apps/audioPlayer";
 import { GenerateQr } from "./apps/qrCode";
 import { TodoList } from "./apps/todoList";
+import AOS from "aos";
 
 import "./../css/normalize.css";
 import "./../css/styles.css";
 import "./../css/appStyles.css";
 import "./../css/slick.min.css";
 import "./../css/slick-theme.min.css";
+import "aos/dist/aos.css";
 
+AOS.init();
 let track_list = [
   {
     name: "Ukelele", //ukelele

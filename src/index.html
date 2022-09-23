@@ -17,6 +17,7 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
 
     <!-- <link
       rel="stylesheet"
@@ -59,7 +60,7 @@
     </header>
     <section class="block block--noPadding">
       <div class="hero grid container">
-        <div class="block__header hero__content">
+        <div class="block__header hero__content" data-aos="zoom-in">
           <h1 class="block__heading hero__header">
             Frontend, Backend and Data Analysis Engineer
           </h1>
@@ -68,7 +69,10 @@
             skills everyday!
           </p>
         </div>
+
         <img
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
           class="hero__image"
           src="/assets/images/webp/frontOriginal.webp"
           alt=""
@@ -78,6 +82,7 @@
             /assets/images/webp/frontAt3x.webp 1600w
           "
         />
+
         <!-- <picture class="hero__image">
           <source
             type="image/png"
@@ -113,7 +118,7 @@
     </section>
 
     <section class="block block--primary block--vertPadding">
-      <div class="block__header">
+      <div class="block__header" data-aos="fade-up">
         <div class="container container--small">
           <h2 class="block__heading">Hi, I'am Harold Diaz</h2>
           <p>
@@ -129,7 +134,7 @@
 
     <section class="block block--noPadding container block-skills">
       <div class="grid grid--1x2 grid--1x3">
-        <div class="skill">
+        <div class="skill" data-aos="fade-right">
           <div class="card">
             <header class="card__header">
               <span class="icon-container icon-container--accent">
@@ -164,7 +169,7 @@
           </div>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-aos="fade-up">
           <div class="card">
             <header class="card__header">
               <span class="icon-container icon-container--accent">
@@ -202,7 +207,7 @@
           </div>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-aos="fade-left">
           <div class="card">
             <header class="card__header">
               <span class="icon-container icon-container--accent">
@@ -238,7 +243,7 @@
 
     <section class="block block--primary block--vertPadding">
       <div class="block__header">
-        <div class="container container--small">
+        <div class="container container--small" data-aos="fade-up">
           <h2 class="block__heading">My freelance projects</h2>
           <p>
             I've become implementing different apps of different levels to put
@@ -249,7 +254,12 @@
       </div>
     </section>
 
-    <section class="block container block--noPadding block-apps">
+    <section
+      class="block container block--noPadding block-apps"
+      data-aos="zoom-in"
+      data-aos-offset="-50"
+      data-aos-duration="500"
+    >
       <div class="grid grid--1x2 grid--1x3">
         <div class="app">
           <div class="card">
@@ -409,7 +419,7 @@
 
     <section class="block block--primary block--vertPadding">
       <div class="block__header">
-        <div class="container container--small">
+        <div class="container container--small" data-aos="fade-up">
           <h2 class="block__heading">My freelance projects</h2>
           <p>
             I've become implementing different apps of different levels to put
@@ -420,7 +430,12 @@
       </div>
     </section>
 
-    <section class="block container block--noPadding block-apps">
+    <section
+      class="block container block--noPadding block-apps"
+      data-aos="zoom-in"
+      data-aos-duration="500"
+      data-aos-offset="-80"
+    >
       <div class="grid grid--1x2 grid--1x3">
         <div class="app">
           <div class="card">
@@ -1072,5 +1087,9 @@
     <script src="/src/js/jquery/jquery.min.js"></script>
     <script src="/src/js/jquery/slick.min.js"></script> -->
     <!-- <script src="/src/js/index.js"></script> -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!-- <script>
+      AOS.init();
+    </script> -->
   </body>
 </html>
