@@ -67,7 +67,7 @@ h3 {
   }
 
   h3 {
-    font-size: 2.4 rem;
+    font-size: 2.4rem;
   }
 }
 /* Links */
@@ -286,7 +286,7 @@ a {
 /* Skills */
 
 .skill {
-  transition: transform 0.2s ease-out box-shadow 0.3s;
+  transition: transform 0.2s ease-out, box-shadow 0.3s;
   background: #fff;
   border: 1px solid #e6dfdf;
   max-width: 400px;
