@@ -16,16 +16,17 @@
 
     <title>HaroldD - Developer</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <!-- <link rel="stylesheet" href="/src/css/normalize.css" />
     <link rel="stylesheet" href="/src/css/slick.min.css" />
     <link rel="stylesheet" href="/src/css/slick-theme.min.css" />
     <link rel="stylesheet" href="/src/css/styles.css" /> -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
 
@@ -42,12 +43,14 @@
     <header class="container">
       <nav class="nav collapsible collapsible--expanded">
         <a class="nav__brand">
-          <svg>
+          <span class="fas fa-h-square"></span>
+          <span class="fas fa-d"></span>
+          <!-- <svg>
             <use xlink:href="/assets/icons/sprite.svg#square-h-solid"></use>
           </svg>
           <svg>
             <use xlink:href="/assets/icons/sprite.svg#d-solid"></use>
-          </svg>
+          </svg> -->
         </a>
 
         <svg class="icon nav__toggler">
@@ -1053,36 +1056,51 @@
               eligendi a cumque, ut sequi?
             </p>
           </div>
-          <!-- <a class="btn-group btn-group--primary"> Hola </a> -->
-          <button class="btn-group btn-group--accent btn-group--stretched">
+
+          <a class="btn-group btn-group--accent btn-group--stretched" href="">
             <svg class="icon icon--accent">
               <use
                 xlink:href="/assets/icons/sprite.svg#handshake-simple-solid"
               ></use>
             </svg>
-            <a class="btn-group__text" href=""> Let's get in touch </a>
-          </button>
+            <span class="btn-group__text"> Let's get in touch </span>
+          </a>
         </div>
       </div>
     </div>
 
     <footer class="block block--primary footer">
       <div class="container grid">
-        <header class="block__header footer__header">
-          <a class="footer__brand">
-            <svg>
-              <use xlink:href="/assets/icons/sprite.svg#square-h-solid"></use>
-            </svg>
-            <svg>
-              <use xlink:href="/assets/icons/sprite.svg#d-solid"></use>
-            </svg>
-          </a>
+        <div class="block__div footer__header">
+          <div>
+            <!-- <a href="">HOLAA</a> -->
+            <a class="footer__brand" href="">
+              <span class="fas fa-h-square"></span>
+              <span class="fas fa-d"></span>
+            </a>
+            <!-- <a class="fas fa-d" style="color: red"> -->
+            <!-- <svg>
+                <use xlink:href="/assets/icons/sprite.svg#square-h-solid"></use>
+              </svg>
+              <svg>
+                <use xlink:href="/assets/icons/sprite.svg#d-solid"></use>
+              </svg> -->
+            <!-- </a>
+            <a class="fas fa-h-square" style="color: red"> -->
+            <!-- <svg>
+                <use xlink:href="/assets/icons/sprite.svg#square-h-solid"></use>
+              </svg>
+              <svg>
+                <use xlink:href="/assets/icons/sprite.svg#d-solid"></use>
+              </svg> -->
+            <!-- </a> -->
+          </div>
 
           <p class="footer__phrase">
             Experience is the name everyone gives to their mistakes
           </p>
-        </header>
-        <section class="footer__networks">
+        </div>
+        <div class="footer__networks">
           <a class="btn-group btn-group--outline btn-group--round">
             <svg class="icon icon--small">
               <use xlink:href="/assets/icons/sprite.svg#linkedin"></use>
@@ -1108,12 +1126,12 @@
               <use xlink:href="/assets/icons/sprite.svg#envelope-solid"></use>
             </svg>
           </a>
-        </section>
+        </div>
 
-        <section class="footer__copyright">
+        <div class="footer__copyright">
           <p>Handcrafted by me &copy; 2022</p>
           <p>Pereira, Risaralda</p>
-        </section>
+        </div>
       </div>
     </footer>
 
