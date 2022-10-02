@@ -1,5 +1,7 @@
 // Music Player
 
+import { eventHandler } from "../eventHandler";
+
 // Select all the elements in the HTML page
 // and assign them to a variable
 let player = document.querySelector(".player");
@@ -25,7 +27,7 @@ let total_duration = document.querySelector(".total-duration");
 // Create the audio element for the player
 let curr_track = document.createElement("audio");
 
-export class AudioPlayer {
+class AudioPlayer {
   constructor(track_list) {
     this.track_index = 0;
     this.track_list = track_list;
@@ -182,3 +184,49 @@ export class AudioPlayer {
     }
   }
 }
+let track_list = [
+  {
+    name: "Ukelele", //ukelele
+    artist: "Violett",
+    image:
+      "https://freemusicarchive.org/image/?file=images%2Falbums%2FVarious_Artists_-_Aires_Buenos_-_2009113014203475.jpg&width=290&height=290&type=image",
+    path: "https://files.freemusicarchive.org//storage-freemusicarchive-org//music//no_curator//violett//Aires_Buenos//violett_-_04_-_ukelele_seph_remix.mp3",
+  },
+  {
+    name: "Equation",
+    artist: "The hermit",
+    image:
+      "https://freemusicarchive.org/image/?file=track_image%2FRsh7OEv17bMsBhJZx3HZiLr1O4dxRxf4nBOzmtww.jpeg&width=290&height=290&type=track",
+    path: "https://files.freemusicarchive.org//storage-freemusicarchive-org//tracks//52XGYrH1sFstSczS6T52mpAN4xP2Bg0Ig9A4W2S5.mp3",
+  },
+  {
+    name: "Flat Blue Acid",
+    artist: "Simon Mathewson",
+    image:
+      "https://freemusicarchive.org/image/?file=image%2Fz392j03jzX54ASsJi3Ywig71W3k6fR7jSTX0BbHM.jpeg&width=290&height=290&type=image",
+    path: "https://files.freemusicarchive.org//storage-freemusicarchive-org//tracks//ggBEwSSzoiiBNwSCrmn49MzfB7NuMloebARGSsGj.mp3",
+  },
+];
+
+const audioPlayer = new AudioPlayer(track_list);
+audioPlayer.loadTrack();
+
+eventHandler(".prev-track", "click", function () {
+  audioPlayer.prevTrack();
+});
+
+eventHandler(".playpause-track", "click", function () {
+  audioPlayer.playPauseTrack();
+});
+
+eventHandler(".next-track", "click", function () {
+  audioPlayer.nextTrack();
+});
+
+eventHandler(".seek_slider", "change", function () {
+  audioPlayer.seekTo();
+});
+
+eventHandler(".volume_slider", "change", function () {
+  audioPlayer.setVolume();
+});
