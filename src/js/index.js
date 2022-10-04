@@ -2,54 +2,40 @@ import { DigitalClock } from "./apps/digitalClock";
 import { NumCalculator } from "./apps/numCalculator";
 import { GenerateQuote, displayQuote } from "./apps/randomQuote";
 import { TipCalculator } from "./apps/tipCalculator";
-import { eventHandler } from "./eventHandler";
-import { slickSlider } from "./apps/slickSlider";
-import { AudioPlayer } from "./apps/audioPlayer";
+import { eventHandler, isElementInViewport } from "./eventHandler";
 import { GenerateQr } from "./apps/qrCode";
 import { TodoList } from "./apps/todoList";
 import AOS from "aos";
 
+import(
+  /* webpackChunkName: "audioplayer" */ /* webpackPrefetch: true */ "./apps/audioPlayer"
+);
+
 import "./../css/normalize.css";
 import "./../css/styles.css";
 import "./../css/appStyles.css";
-import "./../css/slick.min.css";
-import "./../css/slick-theme.min.css";
+// import "./../css/slick.min.css";
+// import "./../css/slick-theme.min.css";
 import "aos/dist/aos.css";
 
-AOS.init();
-let track_list = [
-  {
-    name: "Ukelele", //ukelele
-    artist: "Violett",
-    image:
-      "https://freemusicarchive.org/image/?file=images%2Falbums%2FVarious_Artists_-_Aires_Buenos_-_2009113014203475.jpg&width=290&height=290&type=image",
-    path: "https://files.freemusicarchive.org//storage-freemusicarchive-org//music//no_curator//violett//Aires_Buenos//violett_-_04_-_ukelele_seph_remix.mp3",
-  },
-  {
-    name: "Equation",
-    artist: "The hermit",
-    image:
-      "https://freemusicarchive.org/image/?file=track_image%2FRsh7OEv17bMsBhJZx3HZiLr1O4dxRxf4nBOzmtww.jpeg&width=290&height=290&type=track",
-    path: "https://files.freemusicarchive.org//storage-freemusicarchive-org//tracks//52XGYrH1sFstSczS6T52mpAN4xP2Bg0Ig9A4W2S5.mp3",
-  },
-  {
-    name: "Flat Blue Acid",
-    artist: "Simon Mathewson",
-    image:
-      "https://freemusicarchive.org/image/?file=image%2Fz392j03jzX54ASsJi3Ywig71W3k6fR7jSTX0BbHM.jpeg&width=290&height=290&type=image",
-    path: "https://files.freemusicarchive.org//storage-freemusicarchive-org//tracks//ggBEwSSzoiiBNwSCrmn49MzfB7NuMloebARGSsGj.mp3",
-  },
-];
+const slider = document.querySelector(".slider");
+const showImages = () => {
+  if (isElementInViewport(slider))
+    import(
+      /* webpackChunkName: "slickSlider" */
+      /* webpackPrefetch: true */
+      "./apps/slickSlider"
+    );
+};
+window.addEventListener("scroll", showImages);
 
+AOS.init();
 const calculator = new NumCalculator();
 const quotes = new GenerateQuote("https://type.fit/api/quotes");
 const tipCalculator = new TipCalculator();
-const audioPlayer = new AudioPlayer(track_list);
 const qrCode = new GenerateQr(".qr__text", ".qr__alert", " .qr__image");
 const todoList = new TodoList();
-audioPlayer.loadTrack();
 setInterval(DigitalClock.showTime, 1000);
-slickSlider();
 
 eventHandler(".collapsible", "click", function () {
   this.classList.toggle("collapsible--expanded");
@@ -83,25 +69,25 @@ eventHandler("#tipPercentage, #numOfPerson", "change", function () {
   tipCalculator.result();
 });
 
-eventHandler(".prev-track", "click", function () {
-  audioPlayer.prevTrack();
-});
+// eventHandler(".prev-track", "click", function () {
+//   audioPlayer.prevTrack();
+// });
 
-eventHandler(".playpause-track", "click", function () {
-  audioPlayer.playPauseTrack();
-});
+// eventHandler(".playpause-track", "click", function () {
+//   audioPlayer.playPauseTrack();
+// });
 
-eventHandler(".next-track", "click", function () {
-  audioPlayer.nextTrack();
-});
+// eventHandler(".next-track", "click", function () {
+//   audioPlayer.nextTrack();
+// });
 
-eventHandler(".seek_slider", "change", function () {
-  audioPlayer.seekTo();
-});
+// eventHandler(".seek_slider", "change", function () {
+//   audioPlayer.seekTo();
+// });
 
-eventHandler(".volume_slider", "change", function () {
-  audioPlayer.setVolume();
-});
+// eventHandler(".volume_slider", "change", function () {
+//   audioPlayer.setVolume();
+// });
 
 eventHandler(".qr__btn", "click", function () {
   qrCode.displayQr();
