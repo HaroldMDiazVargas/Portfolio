@@ -196,17 +196,20 @@
 }
 
 .slider {
-  margin: 0 auto;
+  margin: auto;
   width: 80%;
 }
 
 .slider__content {
   /* width: 10%; */
+  /* margin: auto 1re,; */
 }
 
 .slider__content img {
-  width: 100%;
+  /* width: 100%; */
 
+  width: 100%;
+  /* height: 100%; */
   height: 150px;
   object-fit: cover;
 }
@@ -217,6 +220,11 @@
   font-size: 1.5rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .slider__action {
+    white-space: nowrap;
+  }
+}
 /* Music Player */
 
 .player {

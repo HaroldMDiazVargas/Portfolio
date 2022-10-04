@@ -190,6 +190,7 @@ let track_list = [
     artist: "Violett",
     image:
       "https://freemusicarchive.org/image/?file=images%2Falbums%2FVarious_Artists_-_Aires_Buenos_-_2009113014203475.jpg&width=290&height=290&type=image",
+    // path: "/assets/audio/violett_-_04_-_ukelele_seph_remix.mp3",
     path: "https://files.freemusicarchive.org//storage-freemusicarchive-org//music//no_curator//violett//Aires_Buenos//violett_-_04_-_ukelele_seph_remix.mp3",
   },
   {
@@ -197,6 +198,7 @@ let track_list = [
     artist: "The hermit",
     image:
       "https://freemusicarchive.org/image/?file=track_image%2FRsh7OEv17bMsBhJZx3HZiLr1O4dxRxf4nBOzmtww.jpeg&width=290&height=290&type=track",
+    // path: "/assets/audio/ggBEwSSzoiiBNwSCrmn49MzfB7NuMloebARGSsGj.mp3",
     path: "https://files.freemusicarchive.org//storage-freemusicarchive-org//tracks//52XGYrH1sFstSczS6T52mpAN4xP2Bg0Ig9A4W2S5.mp3",
   },
   {
@@ -204,6 +206,7 @@ let track_list = [
     artist: "Simon Mathewson",
     image:
       "https://freemusicarchive.org/image/?file=image%2Fz392j03jzX54ASsJi3Ywig71W3k6fR7jSTX0BbHM.jpeg&width=290&height=290&type=image",
+    // path: "/assets/audio/52XGYrH1sFstSczS6T52mpAN4xP2Bg0Ig9A4W2S5.mp3",
     path: "https://files.freemusicarchive.org//storage-freemusicarchive-org//tracks//ggBEwSSzoiiBNwSCrmn49MzfB7NuMloebARGSsGj.mp3",
   },
 ];
@@ -230,3 +233,32 @@ eventHandler(".seek_slider", "change", function () {
 eventHandler(".volume_slider", "change", function () {
   audioPlayer.setVolume();
 });
+
+// const getAudioNames = () => {
+//   const r = require.context("/assets/audio/", false, /\.mp3$/);
+
+//   // return an array list of filenames (with extension)
+//   const importAll = (r) => r.keys().map((file) => file.match(/[^\/]+$/)[0]);
+
+//   console.log(importAll(r));
+//   return importAll(r);
+// };
+
+// const lazyLoadAudio = (audioName, audio) => {
+//   import(
+//     /* webpackMode: "lazy-once" */
+//     `/assets/audio/${audioName}`
+//   )
+//     .then((src) => (audio = new Audio(src.default)))
+//     .catch((err) => console.error(err));
+// };
+
+// const audioNames = getAudioNames();
+// audios = new Array(audioNames.length);
+// audioNames.forEach((audioName, indx) => {
+//   lazyLoadAudio(audioName, audios[indx]);
+// });
+
+// var audio = new Audio("/assets/audio/violett_-_04_-_ukelele_seph_remix.mp3");
+// audio.play();
+// audio.pause();
