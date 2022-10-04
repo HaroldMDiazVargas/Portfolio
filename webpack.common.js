@@ -13,7 +13,7 @@ module.exports = {
         loader: "html-loader",
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|webp|mp3)$/i,
         include: path.resolve(__dirname, "assets"),
         type: "asset/resource", //Asset module, not required loader!
       },

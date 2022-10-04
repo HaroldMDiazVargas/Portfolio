@@ -9,8 +9,8 @@ module.exports = merge(common, {
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "js/[name].bundle.js",
-    // clean: true,
-    clean: process.env.NODE_ENV === "production",
+    clean: true,
+    // clean: process.env.NODE_ENV === "production",
     assetModuleFilename: "assets/[name][ext]", //hash, fullhash, chunckhash, query
     // pathinfo: false, //Dev
   },
@@ -36,6 +36,7 @@ module.exports = merge(common, {
     // moduleIds: "deterministic",
     runtimeChunk: "single",
     splitChunks: {
+      chunks: "all",
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
