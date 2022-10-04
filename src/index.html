@@ -452,17 +452,17 @@
 
               <div class="calculator-tip__result block--primary" id="result">
                 <div class="total">
-                  <h5 class="total__heading">Tip</h5>
+                  <div class="total__heading">Tip</div>
                   <span class="total__result">__.__</span>
                 </div>
 
                 <div class="total">
-                  <h5 class="total__heading">Total</h5>
+                  <div class="total__heading">Total</div>
                   <span class="total__result">__.__</span>
                 </div>
 
                 <div class="total">
-                  <h5 class="total__heading">Each Person Pay</h5>
+                  <div class="total__heading">Each Person Pay</div>
                   <span class="total__result">__.__</span>
                 </div>
               </div>
@@ -502,7 +502,7 @@
                     </button>
                   </td>
                   <td>
-                    <button class="calculator__btn calculator__btn-del">
+                    <button class="calculator__btn calculator__btn-del" aria-label="Remove">
                       <i class="fas fa-backspace"></i>
                     </button>
                   </td>
@@ -639,7 +639,7 @@
                 man of value.
               </p>
               <p class="quote-gen__author">By Author</p>
-              <button class="btn-group btn-group--accent btn-group--stretched quote-gen__btn">
+              <button class="btn-group btn-group--accent btn-group--stretched quote-gen__btn" aria-label="New quoote">
                 <span class="fas fa-sync"></span>
               </button>
             </div>
@@ -741,14 +741,16 @@
               </div>
 
               <div class="slider_container">
+                <label for="seekSlider"></label>
                 <div class="current-time">00:00</div>
-                <input type="range" min="1" max="100" value="0" class="seek_slider range">
+                <input type="range" min="1" max="100" value="0" class="seek_slider range" id="seekSlider">
                 <div class="total-duration">00:00</div>
               </div>
 
               <div class="slider_container">
+                <label for="seekVolume"></label>
                 <i class="fa fa-volume-down"></i>
-                <input type="range" min="1" max="100" value="99" class="volume_slider range">
+                <input type="range" min="1" max="100" value="99" class="volume_slider range" id="Volume">
                 <i class="fa fa-volume-up"></i>
               </div>
             </div>
@@ -909,7 +911,7 @@
           </p>
         </div>
 
-        <a class="btn-group btn-group--accent btn-group--stretched" href="">
+        <a class="btn-group btn-group--accent btn-group--stretched" href="" aria-label="Get in touch">
           <svg class="icon icon--accent">
             <use xlink:href="/assets/icons/sprite.svg#handshake-simple-solid"></use>
           </svg>
@@ -924,7 +926,7 @@
       <div class="block__div footer__header">
         <div>
           <!-- <a href="">HOLAA</a> -->
-          <a class="footer__brand" href="">
+          <a class="footer__brand" href="" aria-label="Logo">
             <span class="fas fa-h-square"></span>
             <span class="fas fa-d"></span>
           </a>
