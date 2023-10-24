@@ -46,24 +46,17 @@
         <a class="nav__brand">
           <span class="fas fa-h-square"></span>
           <span class="fas fa-d"></span>
-          <!-- <svg>
-            <use xlink:href="/assets/icons/sprite.svg#square-h-solid"></use>
-          </svg>
-          <svg>
-            <use xlink:href="/assets/icons/sprite.svg#d-solid"></use>
-          </svg> -->
         </a>
 
         <svg class="icon nav__toggler">
           <use xlink:href="/assets/icons/sprite.svg#bars"></use>
         </svg>
         <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Projects</a></li>
+          <li class="nav__item"><a href="#Projects">Projects</a></li>
 
           <li class="nav__item">
             <a
-              href="https://www.google.com"
-              target="_blank"
+              href="#Contact"
               class="btn-group btn-group--primary"
             >
               Contact me
@@ -89,11 +82,7 @@
           data-aos-anchor-placement="top-bottom"
           class="hero__image"
           src="/assets/images/webp/frontOriginal.webp"
-          srcset="
-            /assets/images/webp/front.webp      400w,
-            /assets/images/webp/frontAt2x.webp  800w,
-            /assets/images/webp/frontAt3x.webp 1600w
-          "
+          srcset="/assets/images/webp/front.webp 400w, /assets/images/webp/frontAt2x.webp 800w, /assets/images/webp/frontAt3x.webp 1600w"
           sizes="(max-width: 500px) 60vw, 50vw"
           alt=""
         />
@@ -278,7 +267,7 @@
       </div>
     </section>
 
-    <section class="block block--primary block--vertPadding">
+    <section class="block block--primary block--vertPadding" id="Projects" >
       <div class="block__header">
         <div class="container container--small" data-aos="fade-up">
           <h2 class="block__heading">Professional projects</h2>
@@ -301,15 +290,16 @@
       <div class="grid grid--1x2 grid--1x3">
         <div class="app">
           <div class="card">
-            <header class="card__header app__header">
-              <svg class="icon icon--small icon--heading">
-                <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
-              </svg>
-
-              <h2 class="app__name">App1</h2>
+            <header class="card__header app__header">           
+              <img style="width: 17rem; height: 6rem;" src="/assets/images/crmTek.svg" alt="CRM Tool logo">
               <p class="app__summary">
-                I like to design databases and integrate with APIs
+                Developed the CRM app for Tek soluciones tecnológicas.
+                The app facilitates the 
+                interaction across various departaments within the company.
               </p>
+              <span class="app__tools">Used tools:</span>
+              <p class="app__tools-name">Vuejs, Vuex, SASS, Bootstrap, NodeJS, Sequelize, 
+                AuroraDB RDS MySQL, EC2, S3, JWT, Git, SwaggerHub</p>
             </header>
 
             <div class="card__body">
@@ -317,8 +307,8 @@
                 <svg class="link-app__icon">
                   <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
                 </svg>
-                <a href="" class="link-app__url app__address">
-                  www.google.com
+                <a href="https://crmtool.bybinary.co/login" target="_blank" class="link-app__url app__address">
+                  CRM TOOL
                 </a>
               </div>
             </div>
@@ -328,14 +318,15 @@
         <div class="app">
           <div class="card">
             <header class="card__header app__header">
-              <svg class="icon icon--small icon--heading">
-                <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
-              </svg>
-
-              <h2 class="app__name">App1</h2>
+              <div class="app__textlogo">
+                <span style="align-self: flex-end; font-size: 3rem; font-weight: bold;">Linked</span> 
+                <img src="/assets/images/linked.svg" alt="LinedIn logo">
+              </div>
               <p class="app__summary">
-                I like to design databases and integrate with APIs
+                Developed a fullstack responsive LinkedIn clone app using TypeScript.
               </p>
+              <span class="app__tools">Used tools:</span>
+              <p class="app__tools-name">Angular, Ionic, SASS, NestJS, TypeORM, PostgreSQL, RxJS, Session-Cookie authentication</p>
             </header>
 
             <div class="card__body">
@@ -343,7 +334,7 @@
                 <svg class="icon icon--small">
                   <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
                 </svg>
-                <a href="" class="link-app__url"> www.google.com </a>
+                <a target="_blank" href="https://github.com/HaroldMDiazVargas/LinkedInClone" class="link-app__url">LinkedInClone</a>
               </div>
             </div>
           </div>
@@ -352,23 +343,22 @@
         <div class="app">
           <div class="card">
             <header class="card__header app__header">
-              <svg class="icon icon--small icon--heading">
-                <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
-              </svg>
-
-              <h2 class="app__name">App1</h2>
+              <img src="/assets/images/auraSacra.webp" style="width: 6rem" alt="Aura sacra logo">
               <p class="app__summary">
-                I like to design databases and integrate with APIs
+                Developed a custom candle shop with features like shopping cart, invoice, delivery detail, payment 
+                method, etc.
               </p>
-            </header>
+              <span class="app__tools">Used tools:</span>
+              <p class="app__tools-name">Angular, Angular Material, SASS, NestJS, Prisma ORM, JWT, GoogleAuth, MySQL</p>
+            </header> 
 
             <div class="card__body">
               <div class="link-app link-app--accent">
                 <svg class="icon icon--small">
                   <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
                 </svg>
-                <a href="" class="link-app__url app__address">
-                  www.google.com
+                <a href="" target="_blank" class="link-app__url app__address">
+                  Aura sacra
                 </a>
               </div>
             </div>
@@ -378,14 +368,15 @@
         <div class="app">
           <div class="card">
             <header class="card__header app__header">
-              <svg class="icon icon--small icon--heading">
-                <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
-              </svg>
-
-              <h2 class="app__name">App1</h2>
+              <a class="nav__brand">
+                <span class="fas fa-h-square"></span>
+                <span class="fas fa-d"></span>
+              </a>
               <p class="app__summary">
-                I like to design databases and integrate with APIs
+                Developed of this personal porfolio.
               </p>
+              <span class="app__tools">Used tools:</span>
+              <p class="app__tools-name">HTML, CSS, AOS, JavaScript, JQuery, Webpack</p>
             </header>
 
             <div class="card__body">
@@ -393,8 +384,8 @@
                 <svg class="icon icon--small">
                   <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
                 </svg>
-                <a href="" class="link-app__url app__address">
-                  www.google.com
+                <a href="https://github.com/HaroldMDiazVargas/portfolio" target="_blank" class="link-app__url app__address">
+                  Portfolio
                 </a>
               </div>
             </div>
@@ -404,14 +395,12 @@
         <div class="app">
           <div class="card">
             <header class="card__header app__header">
-              <svg class="icon icon--small icon--heading">
-                <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
-              </svg>
-
-              <h2 class="app__name">App1</h2>
+              <img src="/assets/images/crmOwn.webp" style="width: 15rem" alt="CRM image">
               <p class="app__summary">
-                I like to design databases and integrate with APIs
+                Developed a custom CRM that covers general features that can be used for various companies.
               </p>
+              <span class="app__tools">Used tools:</span>
+              <p class="app__tools-name">Angular, NestJS, Prisma, Docker, MySQL, JWT </p>
             </header>
 
             <div class="card__body">
@@ -420,7 +409,7 @@
                   <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
                 </svg>
                 <a href="" class="link-app__url app__address">
-                  www.google.com
+                  CRM
                 </a>
               </div>
             </div>
@@ -430,14 +419,13 @@
         <div class="app">
           <div class="card">
             <header class="card__header app__header">
-              <svg class="icon icon--small icon--heading">
-                <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
-              </svg>
-
-              <h2 class="app__name">App1</h2>
+              <img src="/assets/images/selenium.svg" style="width: 8rem" alt="Aura sacra logo">
               <p class="app__summary">
-                I like to design databases and integrate with APIs
+                Implemented a web scraping app to generate comprehensive reports on the 
+                structure and compliance of .gov websites.
               </p>
+              <span class="app__tools">Used tools:</span>
+              <p class="app__tools-name">Python, Selenium, Pipenv, Pandas, Numpy</p>
             </header>
 
             <div class="card__body">
@@ -445,13 +433,78 @@
                 <svg class="icon icon--small">
                   <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
                 </svg>
-                <a href="" class="link-app__url app__address">
-                  www.google.com
+                <a href="https://github.com/HaroldMDiazVargas/WebScraping" 
+                  target="_blank"
+                  class="link-app__url app__address">
+                  WebScrap .gov.co
                 </a>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="app">
+          <div class="card">
+            <header class="card__header app__header">
+              <img src="/assets/images/messengerLogo.svg" style="width: 8rem" alt="Aura sacra logo">
+              <p class="app__summary">
+                Currently developing a messenger clone app using Microservice architecture
+              </p>
+              <span class="app__tools">Used tools:</span>
+              <p class="app__tools-name">NestJS, RabbitMQ, ReactJS, Docker</p>
+            </header>
+
+            <div class="card__body">
+              <div class="link-app link-app--accent">
+                <svg class="icon icon--small">
+                  <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
+                </svg>
+                <a
+                  class="link-app__url app__address">
+                  MessengerClone
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app">
+          <div class="card">
+            <header class="card__header app__header">
+              <img src="/assets/images/sciatic.webp" style="width: 8rem; border-radius: 10px;" alt="Aura sacra logo">
+              <p class="app__summary">
+                Implemented a proposal nerve segmentation using conditional input and transfer learning
+              </p>
+              <span class="app__tools">Used tools:</span>
+              <p class="app__tools-name">Python, TensorFlow, Keras, Pandas, Numpy, CV2</p>
+            </header>
+            
+            <div class="card__body">
+              <div class="link-app link-app--accent">
+                <svg class="icon icon--small">
+                  <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
+                </svg>
+                <a href="https://www.kaggle.com/harolddaz/08-resnet50unet" 
+                  target="_blank"
+                  class="link-app__url app__address">
+                  Sample code
+                </a>
+              </div>
+              <div class="card__body" style="display: inline-block;">
+                <div class="link-app link-app--accent">
+                  <svg class="icon icon--small">
+                    <use xlink:href="/assets/icons/sprite.svg#newTab"></use>
+                  </svg>
+                  <a href="https://link.springer.com/chapter/10.1007/978-3-030-89691-1_13" 
+                    target="_blank"
+                    class="link-app__url app__address">
+                    Scientific article
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -989,7 +1042,7 @@
       </div>
     </section>
 
-    <section class="block block--noPadding block--outline">
+    <!-- <section class="block block--noPadding block--outline">
       <header class="block__header">
         <h2>Testimonials</h2>
         <p>Some people I have worked with have said that...</p>
@@ -1004,17 +1057,8 @@
                 alt="A happy, smiling customer"
               />
 
-              <!-- <h2 class="testimonial__name">Testimonials</h2>
-                <p class="testimonial__intro">
-                  Some people I have worked with have said that...
-                </p> -->
             </header>
             <div class="card__body">
-              <!-- <img
-                  class="testimonial__image"
-                  src="/images/webp/harold.webp"
-                  alt="A happy, smiling customer"
-                > -->
               <blockquote class="quote">
                 <p class="quote__text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -1043,7 +1087,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <div class="container">
       <div class="callout callout--secondary callout-signup">
@@ -1052,15 +1096,16 @@
 
           <div class="callout__content">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              eligendi a cumque, ut sequi?
+              Feel free to reach out, and let's chat about how we can work together on exciting projects
             </p>
           </div>
 
           <a
             class="btn-group btn-group--accent btn-group--stretched"
-            href=""
+            href="https://api.whatsapp.com/send?phone=573235890027"
             aria-label="Get in touch"
+            target="_blank"
+            
           >
             <svg class="icon icon--accent">
               <use
@@ -1073,7 +1118,7 @@
       </div>
     </div>
 
-    <footer class="block block--primary footer">
+    <footer class="block block--primary footer" id="Contact">
       <div class="container grid">
         <div class="block__div footer__header">
           <div>
@@ -1105,13 +1150,17 @@
           </p>
         </div>
         <div class="footer__networks">
-          <a class="btn-group btn-group--outline btn-group--round">
+          <a class="btn-group btn-group--outline btn-group--round" href="https://www.linkedin.com/in/harold-mauricio-d%C3%ADaz-vargas-522912253/"
+            target="_blank">
             <svg class="icon icon--small">
               <use xlink:href="/assets/icons/sprite.svg#linkedin"></use>
             </svg>
           </a>
 
-          <a class="btn-group btn-group--outline btn-group--round">
+          <a 
+            href="https://www.instagram.com/harolddiaz10/"
+            target="_blank"
+            class="btn-group btn-group--outline btn-group--round">
             <svg class="icon icon--small">
               <use xlink:href="/assets/icons/sprite.svg#instagram"></use>
             </svg>
@@ -1125,7 +1174,9 @@
             </svg>
           </a>
 
-          <a class="btn-group btn-group--outline btn-group--round">
+          <a 
+            href="mailto:harold.diazv1@gmail.com"
+            class="btn-group btn-group--outline btn-group--round">
             <svg class="icon icon--small">
               <use xlink:href="/assets/icons/sprite.svg#envelope-solid"></use>
             </svg>
@@ -1133,7 +1184,7 @@
         </div>
 
         <div class="footer__copyright">
-          <p>Handcrafted by me &copy; 2022</p>
+          <p>Handcrafted by Harold Díaz &copy; 2022</p>
           <p>Pereira, Risaralda</p>
         </div>
       </div>
