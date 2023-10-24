@@ -799,8 +799,23 @@ a {
   font-size: 1.8rem;
 }
 
+.app__tools {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.app__tools-name {
+  /* font-weight: 200; */
+  font-size: 1.5rem;
+}
+
 .app__address {
   font-size: 1.3rem;
+}
+
+.app__textlogo{
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
