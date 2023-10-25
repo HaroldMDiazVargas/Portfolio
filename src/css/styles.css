@@ -262,7 +262,7 @@ a {
 }
 
 .list--inline .list__item {
-  display: inline;
+  display: inline-block;
   margin-right: 2rem;
 }
 
@@ -310,7 +310,7 @@ a {
   font-size: 2rem;
   color: var(--color-primary);
   margin-top: 4rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .skill .list__item {
@@ -779,6 +779,8 @@ a {
   background: #fff;
   border: 1px solid #e6dfdf;
   max-width: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
 .app:hover {
@@ -816,6 +818,13 @@ a {
 .app__textlogo{
   display: flex;
   justify-content: center;
+}
+
+.app__link{
+  justify-self: flex-end;
+  align-self: center;
+  margin-bottom: 3rem;
+  margin-top: auto;
 }
 
 @media screen and (min-width: 1024px) {
