@@ -809,6 +809,7 @@ a {
 .app__tools-name {
   /* font-weight: 200; */
   font-size: 1.5rem;
+  margin: 0;
 }
 
 .app__address {
